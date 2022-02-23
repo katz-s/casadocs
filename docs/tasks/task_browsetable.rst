@@ -33,34 +33,6 @@ Description
    Name of table file on disk. For example *filename.ms*,
    *caltable.tbl*, *imagefile.image*, etc.
 
-   *mightedit*
-
-   If the default False is changed to True, this disables the
-   filtering options and allows editing the table.
-
-   .. warning:: **WARNING**: The GUI appears to ignore whether the table tool
-      is opened read-only - just be aware that you should not edit
-      filtered tables unless you know what you are doing!
-
-   *sortlist*
-
-   List of columns to sort by.
-
-   *taql*
-
-   TaQL query string for prefiltering the table (see "Examples" tab
-   at the top-right)
-
-   For more information about the Table Query Language (TaQL) string, see this note: https://casacore.github.io/casacore-notes/199.html
-
-   *skipcols*
-
-   Columns to NOT display. For example: *skipcols='feed1, feed2'
-
-   .. figure:: _apimedia/e7b82ce6a699178fe6f43360bef6c38bb9c431bb.png
-
-      CASA table browser with an MS loaded.
-
 
 .. _Examples:
 
@@ -76,15 +48,6 @@ Examples
    ::
 
       browsetable(tablename='measurementset.ms')
-
-
-   The following will open the table browser and displays only those
-   data from *measurementset.ms* for which the column ANTENNA2 has a
-   value below 6:
-
-   ::
-
-      browsetable(tablename='measurementset.ms',taql='ANTENNA2 < 6')
 
 
    To get a plot of two table values, click on tools, then click on
